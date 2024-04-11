@@ -1,31 +1,16 @@
 .page-container {
-  margin: 0 10%; /* layout styles for whole page container */
-}
+  h1 {
+    color: red;
 
-.page-container h1 {
-  color: green; /* targets ALL h1 tags inside page container */
-}
+    &:hover {
+      color: green;
+      cursor: pointer;
+    }
+  }
 
-.page-paragraph-wrapper p {
-  font-size: 20px; /* styles all p tags nested under page paragraph wrapper */
-}
-
-.page-paragraph-wrapper > p {
-  color: purple; /* This one targets any p tags directly nested under page paragraph wrapper */
-}
-
-.another-paragraph-wrapper > p {
-  color: blue; /* This one targets any p tags directly nested under another paragraph wrapper */
-}
-
-.another-paragraph-wrapper h2 {
-  font-size: 70px; /* styles all h2's nested under another paragraph wrapper */
-}
-
-.another-paragraph-wrapper > h2 {
-  color: aqua; /* This one targets any h2 directly nested under another paragraph wrapper */
-}
-
-.another-header-wrapper > h2 {
-  color: burlywood; /* This one targets any h2 directly nested under another header wrapper */
+  .page-paragraph-wrapper {
+    p {
+      color: blue;
+    }
+  }
 }
